@@ -1,0 +1,99 @@
+/*-------------links-----------------*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* -------------Big Screen navigation bar--------------- */
+
+.navi{
+    display: flex;
+    justify-content: space-between;
+    /* height: auto; */
+    background-color:rgba(255, 255, 255, 0.95);
+    z-index:1;
+    box-shadow: 1px 2px 2px rgb(119, 109, 109);
+}
+
+.main-nav{
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    align-items: center;
+}
+
+.main-nav li{
+    margin-right: 20px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid hsla(182, 100%, 57%, 0.9);
+}
+
+#nav-name{
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+#nav-name:hover{
+    color: hsla(182, 100%, 57%);
+}
+
+/* ------------Mobile Navi----------------- */
+
+.mobile-nav-icon{
+    display: none;
+    cursor: pointer;
+    margin-right: 20px;
+    /* margin-top: -20px; */
+}
+
+.mobile-nav-icon i{
+    display: block;
+    font-size: 40px;
+}
+
+/* ---------sticky navigation bar-------------------- */
+
+.sticky-nav{
+    position: fixed;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    #nav-name{
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    
+        .main-nav{
+            display: none;
+            margin-top: 10px;
+            width: 60%;
+        }
+    
+        .main-nav li{
+            padding: 5px;
+            margin-left: 20px;
+        }
+    
+        .main-nav li a:hover,
+        .main-nav li a:active{
+            border-bottom: 2px solid transparent;
+        }
+    
+    
+        .mobile-nav-icon{
+            display: block;
+        }
+    
+        .mobile-nav-icon i:hover{
+            color: hsla(182, 100%, 57%, 0.9);
+        }
+    
+        .ion-ios-close{
+            font-size: 40px;
+            margin-right: 5px;
+        }
+    }
